@@ -1,30 +1,35 @@
-<h1 align="center" id="title">Task Manager</h1><br>
+<h1 align="center" id="title">SPA: Number Guessing Game with Javascript</h1><br>
 
-<p id="description">Created a basic CRUD with Ruby on Rails using Scaffolding</p>
+<p id="description">A simple JS SPA</p>
 
 <h2>Project Screenshots:</h2>
 
-<img src ="https://i.imgur.com/TJ3dOwb.gif">
+<p>Starting Page</p>
+<img src ="https://i.imgur.com/F12yFIO.png">
 
-<p>View a task:</p>
-<img src = "https://i.imgur.com/W3aZSZ3.gif">
+<p>Game Started:</p>
+<img src = "https://i.imgur.com/ZhvTmer.png">
 
-<p>Add a new Task</p> 
-<img src="https://i.imgur.com/QqrsOQf.gif">
+<p>Guess is too small or too big!</p> 
+<img src="https://i.imgur.com/H2upWB8.png"> <img src="https://i.imgur.com/Fkfkyi0.png">
 
-<p>Mark a task as done</p>
-<img src = "https://i.imgur.com/5D2wFPT.gif">
+<p>Correct guess wins the game!</p>
+<img src = "https://i.imgur.com/isR07PU.png">
+
+<p>Reset the game!</p>
+<img src = "https://i.imgur.com/jXBtPCy.png">
 
 <h2>Features</h2>
-*   CRUD
+*   JavaScript Content Manipulation
+*   JavaScript Functions
+
+
 
 <h2>💻 Built with</h2>
 
 Technologies used in the project:
 
-*   Ruby Programming Language
-*   Rails Framework with Embedded Ruby HTML
-*   Rails Scaffolding
-*   TailwindCSS (non-template)
-*   PostgreSQL
+*   JavaScript
+*   HTML
+*   Tailwind CSS
 
