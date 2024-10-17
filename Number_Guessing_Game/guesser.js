@@ -2,14 +2,18 @@ let start = false;
 let tries=0;
 let ans;   
 
+let startbutton = document.getElementById(`StartGame`);
+let resetbutton = document.getElementById(`reset`);
+let ansfield = document.getElementById(`ans`);
+let minfield = document.getElementById(`min`);
+let maxfield = document.getElementById(`max`);
 
-
-document.getElementById(`StartGame`).onclick = function r(){
+startbutton.onclick = function r(){
         
-    let min = document.getElementById(`min`).value;
+    let min = minfield.value;
     min = Number(min);
     console.log(min);
-    let max = document.getElementById(`max`).value;
+    let max = maxfield.value;
     max = Number(max);
 
     ans = Math.floor(Math.random()*(max-min)+min);
@@ -19,14 +23,14 @@ document.getElementById(`StartGame`).onclick = function r(){
     start = true;
     tries = 1;}
     else{
-        document.getElementById(`ans`).textContent=`Enter both the numbers to start the game!!`;
-        document.getElementById(`StartGame`).onclick = function(){
+        ansfield.textContent=`Enter both the numbers to start the game!!`;
+        startbutton.onclick = function(){
         r();
     }
 }
 
     if(start){
-        document.getElementById(`ans`).textContent=`Awaiting your answer!`;
+        ansfield.textContent=`Awaiting your answer!`;
     
     document.getElementById(`guessSubmit`).onclick = function(){
         console.log('this runs')
@@ -35,29 +39,29 @@ document.getElementById(`StartGame`).onclick = function r(){
     
         if(!start){
 
-            document.getElementById(`ans`).textContent = `Check if the game has been started!`;
+            ansfield.textContent = `Check if the game has been started!`;
 
         };
             let guess = document.getElementById(`guessNumber`).value;
     
             if(guess>ans){
-                document.getElementById(`ans`).textContent= `Your answer is too big!` ;
+                ansfield.textContent= `Your answer is too big!` ;
                 tries++;
             }
                 
             else if(guess<ans){
-                document.getElementById(`ans`).textContent= `Your answer is too small!`;
+                ansfield.textContent= `Your answer is too small!`;
                 tries++;
             }
             else{
                 start = false;
-                document.getElementById(`ans`).textContent = `You guessed it right! The answer is ${ans}!\nNumber of tries: ${tries}!`;
+                ansfield.textContent = `You guessed it right! The answer is ${ans}!\nNumber of tries: ${tries}!`;
             }
     }
-    document.getElementById(`reset`).onclick = function(){
-        document.getElementById(`min`).value = ``;
-        document.getElementById(`max`).value = ``;
-        document.getElementById(`ans`).textContent=`Awaiting start!`;
+    resetbutton.onclick = function(){
+        minfield.value = ``;
+        maxfield.value = ``;
+        ansfield.textContent=`Awaiting start!`;
         document.getElementById(`guessNumber`).value = "";
         r();
     ;
