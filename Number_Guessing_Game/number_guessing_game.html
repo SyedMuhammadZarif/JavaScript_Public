@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game!</title>
+    <!-- Tailwind CSS via CDN -->
+<!--    <link href="src\output.css" rel="stylesheet"> -->
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class = "flex flex-col h-screen w-screen bg-cover bg-center bg-[url('https://cdnb.artstation.com/p/assets/images/images/042/626/587/original/christopher-anry-allships01-800p.gif?1635020660')] " >
+    <glassback class="flex flex-col mx-auto my-auto p-5 w-fit h-fit bg-black bg-opacity-90 rounded-xl">
+    <h6 class="font-extrabold text-4xl mx-auto mt-20 mb-10 text-rose-600 bg-white rounded-full p-4">WELCOME TO THE NUMBER GUESSING GAME!</h6>
+    <mainbox id="mainbox" class = "flex flex-col w-fit h-fit p-5 bg-white bg-opacity-10 mx-auto rounded-lg ">
+        
+        <div class="flex flex-row mx-auto justify-items-center">
+            <button id="reset" class="text-white rounded-xl px-2 py-1 mb-2 bg-red-600 w-fit mx-auto hover:bg-red-900 hover:text-white hover:transition-colors hover:duration-300 hover:scale-125 active:bg-yellow-400 ">Reset</button>
+            <input id="min"  placeholder="Enter minimum!" class="p-1 ml-2 w-fit h-fit mr-2 text-center rounded-xl bg-lime-600 placeholder-white text-white">
+            <input id="max"  placeholder="Enter maximum!" class="p-1 mr-2 h-fit w-fit text-center rounded-xl bg-red-700 placeholder-white text-white">
+            <button id="StartGame" class="text-white rounded-xl px-2 py-1 mb-2 bg-green-600 w-fit mx-auto hover:bg-green-600 hover:text-white hover:transition-colors hover:duration-300 hover:scale-125 active:bg-yellow-400 ">Start</button>
+
+        </div>
+        
+        
+        <div class="flex flex-col">
+            <input id = guessNumber type="Number" placeholder="Enter your Guess!" class=" text-white w-fit  mx-auto mt-2 p-2 text-center rounded-xl bg-white bg-opacity-10 placeholder-white">
+            <button id ="guessSubmit" class="text-black rounded-xl p-2 mt-2 bg-white w-fit mx-auto hover:bg-green-600 hover:text-white hover:transition-colors hover:duration-300 active:bg-yellow-400 ">Submit</button>
+        </div>
+
+    </mainbox>
+
+    <answerbox class="flex mx-auto justify-items-center h-fit w-fit mt-2 ">
+        <ans id="ans" class="flex justify-center bg-white p-2 rounded-lg text-green-500 font">
+            Awaiting start!
+        </ans>
+    </answerbox>
+</glassback>
+</body>
+<script src="guesser.js"></script>
+</html>
