@@ -1,35 +1,38 @@
 <h1 align="center" id="title">SPA: Number Guessing Game with Javascript</h1><br>
 
-<p id="description">A simple JS SPA</p>
+<p align="center" id="description">A simple JS SPA</p>
 
-<h2>Project Screenshots:</h2>
+<h2 align="center">Project Screenshots:</h2>
 
-<p>Starting Page</p>
-<img src ="https://i.imgur.com/F12yFIO.png">
+<p align="center">Starting Page</p>
+<p align="center"><img src="https://i.imgur.com/F12yFIO.png"></p>
 
-<p>Game Started:</p>
-<img src = "https://i.imgur.com/ZhvTmer.png">
+<p align="center">Game Started:</p>
+<p align="center"><img src="https://i.imgur.com/ZhvTmer.png"></p>
 
-<p>Guess is too small or too big!</p> 
-<img src="https://i.imgur.com/H2upWB8.png"> <img src="https://i.imgur.com/Fkfkyi0.png">
+<p align="center">Guess is too small or too big!</p>
+<p align="center">
+  <img src="https://i.imgur.com/H2upWB8.png">
+  <img src="https://i.imgur.com/Fkfkyi0.png">
+</p>
 
-<p>Correct guess wins the game!</p>
-<img src = "https://i.imgur.com/isR07PU.png">
+<p align="center">Correct guess wins the game!</p>
+<p align="center"><img src="https://i.imgur.com/isR07PU.png"></p>
 
-<p>Reset the game!</p>
-<img src = "https://i.imgur.com/jXBtPCy.png">
+<p align="center">Reset the game!</p>
+<p align="center"><img src="https://i.imgur.com/jXBtPCy.png"></p>
 
-<h2>Features</h2>
-*   JavaScript Content Manipulation
-*   JavaScript Functions
+<h2 align="center">Features</h2>
+<p align="center">
+  * JavaScript Content Manipulation<br>
+  * JavaScript Functions
+</p>
 
-
-
-<h2>💻 Built with</h2>
-
-Technologies used in the project:
-
-*   JavaScript
-*   HTML
-*   Tailwind CSS
-
+<h2 align="center">💻 Built with</h2>
+<p align="center">
+  Technologies used in the project:
+  <br>
+  * JavaScript<br>
+  * HTML<br>
+  * Tailwind CSS
+</p>
