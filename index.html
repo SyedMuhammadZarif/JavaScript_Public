@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <!-- Tailwind CSS via CDN -->
+<!--    <link href="src\output.css" rel="stylesheet"> -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body class="h-screen w-screen bg-gradient-to-tr from-rose-900 to to-black">
+    <div class="flex flex-col w-screen">
+        <div class="flex justify-center w-fit mx-auto items-center mt-10">
+            <h1 id="myh1" class="inline-block w-fit bg-black bg-opacity-60 rounded-full text-rose-700 p-2">Header</h1>
+        </div>  
+        <p id="myp" class="flex justify-center items-start p-4 text-center text-balance mx-auto text-rose-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa totam sapiente, soluta reiciendis unde debitis perspiciatis porro, excepturi officiis veniam voluptatibus perferendis id consectetur nemo odit, nam doloremque expedita magnam.</p>
+        <p id="myp2" class="flex justify-center items-start p-4 text-center text-balance mx-auto text-rose-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa totam sapiente, soluta reiciendis unde debitis perspiciatis porro, excepturi officiis veniam voluptatibus perferendis id consectetur nemo odit, nam doloremque expedita magnam.</p>
+        <!-- Basic I/O 
+        <label class="flex justify-center text-rose-800">Username: </label>
+        <input id="Username_Input" class="text-white mx-auto rounded-full bg-white bg-opacity-10 flex w-fit justify-center items-center mb-2 p-2" >
+        <button id='Submit_Button' class="rounded-full bg-white text-rose-800 w-fit mx-auto p-2">Submit</button>
+        <br>
+        <label class="flex justify-center text-rose-800">Enter Number to Multiply: </label>
+        <input id="numinput" class="text-white mx-auto rounded-full bg-white bg-opacity-10 flex w-fit justify-center items-center mb-2 p-2" >
+        <button id='Submit_Button2' class="rounded-full bg-white text-rose-800 w-fit mx-auto p-2">Submit</button>
+        -->
+
+        <!--Counter Program
+        <counternum id = counternum class = "mx-auto"></counternum>
+        <button id = decrease>Decrease</button>
+        <button id = increase>Increase</button>
+        <button id = reset>Reset</button>
+        -->
+        
+        <!--Checked property-->
+        <div class = "flex flex-col justify-start items-start bg-white text-white bg-opacity-20 p-8 ml-20 w-fit rounded-xl border-r-0">
+            <label for="chkbx">Online Payment</label>
+            <input type="checkbox" id = chkbx class = "mb-2"> <!--use name attribute to select only one-->
+            <label for"visabtn">Visa</label>
+            <input type="radio" id="visabtn" class = mb-2 name = "payment">
+            <label for"mstrcrdbtn">Mastercard</label>
+            <input type="radio" id="mstrcrdbtn" class = mb-2 name = "payment">
+            <label for"paypalbtn">PayPal</label>
+            <input type="radio" id="paypalbtn" class = mb-2 name = "payment">
+
+            <button type="submit" id="paymentsubmit" class = "p-2 mt-2 mx-auto rounded-full bg-green-700 hover:bg-lime-700 transition-colors ">Pay</button>
+        </div>
+        <h1 id="submissionresult" class="inline-block w-fit bg-black bg-opacity-60 rounded-full text-rose-700 p-4 mx-auto mt-4">Status</h1>
+    </div>
+</body>
+</html>
+<script src="index.js"></script>
+
+
