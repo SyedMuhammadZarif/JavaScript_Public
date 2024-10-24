@@ -1,12 +1,12 @@
 
-<h1 align="center" id="title">SPA: Digital Click with JavaScript</h1><br>
+<h1 align="center" id="title">SPA: Digital Clock with JavaScript</h1><br>
 
 <p align="center" id="description">A simple JS SPA</p>
 
 <h2 align="center">Project Screenshots:</h2>
 
 
-<p align="center"><img src="https://i.imgur.com/jyFzoQn.png"></p>
+<p align="center"><img src="https://i.imgur.com/rGajRNO.gif"></p>
 
 
 <h2 align="center">Features</h2>
