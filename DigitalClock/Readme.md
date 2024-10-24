@@ -6,7 +6,7 @@
 <h2 align="center">Project Screenshots:</h2>
 
 
-<p align="center"><img src="https://i.imgur.com/rGajRNO.gif"></p>
+<p align="center"><img src="https://i.imgur.com/jyFzoQn.png"></p>
 
 
 <h2 align="center">Features</h2>
