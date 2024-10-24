@@ -1,0 +1,25 @@
+# Ignore README files
+README.md
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Environment variables
+.env
+
+# Backup files
+*.bak
+*.swp
+
+# Compiled files
+*.class
+*.o
+*.so
