@@ -554,6 +554,10 @@ video {
   display: none;
 }
 
+.static {
+  position: static;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -608,12 +612,20 @@ video {
   margin-top: 1rem;
 }
 
+.block {
+  display: block;
+}
+
 .inline-block {
   display: inline-block;
 }
 
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .h-fit {
@@ -625,8 +637,16 @@ video {
   height: 100vh;
 }
 
+.h-lvh {
+  height: 100lvh;
+}
+
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-20 {
+  min-height: 5rem;
 }
 
 .w-fit {
@@ -660,6 +680,22 @@ video {
 
 .animate-slide-in-left {
   animation: slide-in-left 2s forwards;
+}
+
+.grid-flow-row {
+  grid-auto-flow: row;
+}
+
+.grid-flow-col {
+  grid-auto-flow: column;
+}
+
+.grid-flow-col-dense {
+  grid-auto-flow: column dense;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -789,6 +825,14 @@ video {
 
 .bg-gradient-to-tr {
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+}
+
+.bg-\[url\(https\:\/\/media1\.tenor\.com\/m\/fQT87D-F3X0AAAAd\/tenor\.gif\)\] {
+  background-image: url(https://media1.tenor.com/m/fQT87D-F3X0AAAAd/tenor.gif);
+}
+
+.bg-\[url\(\'https\:\/\/media1\.tenor\.com\/m\/fQT87D-F3X0AAAAd\/tenor\.gif\'\)\] {
+  background-image: url('https://media1.tenor.com/m/fQT87D-F3X0AAAAd/tenor.gif');
 }
 
 .from-blue-900 {

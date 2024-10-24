@@ -844,7 +844,7 @@ const registerdate = new Date();
 registerdate.setFullYear(2021);
 console.log(registerdate)
 
-//closures function in another function, they allow private stuff, react viue and angular use these
+//closures function in another function, they allow private stuff, react viue and angular use these, allows state maintenance
 
 function outer(){
     let message = "Hello";
@@ -855,3 +855,44 @@ function outer(){
     inner();
 }
 outer();
+
+
+function createcounter(){
+    let count = 0;
+    function increment(){
+        count++;
+        console.log(`Count increased to: ${count}`);
+    
+    }
+    function getcount(){
+        return count;
+    }  
+    return {increment, getcount} //returning an object with a method of increment
+}
+const counter = createcounter();
+counter.increment();
+counter.increment();
+counter.increment();
+counter.increment();
+counter.increment();
+console.log(counter.getcount());
+
+//set timeout function, allows delays
+
+function sayhello(){
+    window.alert(`Hello!`);
+}
+//setTimeout(sayhello,3000) //calls the function after 3000ms
+//setTimeout(function(){window.alert(`Heilo`)},5000)
+
+let timerID;
+
+function startTimer(){
+    timerID = setTimeout(function(){window.alert(`Hellow`)},3000);
+    console.log(`Started`)
+}
+
+function clearTimer(){
+    clearTimeout(timerID);
+    console.log(`Cleared`)
+}
