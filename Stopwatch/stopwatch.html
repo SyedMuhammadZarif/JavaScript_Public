@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-0 bg-[url('https://i0.wp.com/sitn.hms.harvard.edu/wp-content/uploads/2019/03/SITN_March.jpg?fit=4000%2C2667&ssl=1')] bg-cover bg-center" >
+    <h6 class="mt-20 text-yellow-400 text-center text-6xl font-extrabold">STOPWATCH</h6>
+
+    <main class="flex flex-col h-lvh items-center justify-center ">
+
+        <clock id="clock" class="mb-10 p-6 text-white backdrop-blur-xl bg-black bg-opacity-50 text-8xl w-full text-center font-mono font-bold">
+            00:00:00:00
+        </clock>
+        <buttons class="flex flex-row ">
+            <button id="start" onclick="start()"  class="text-2xl m-2 cursor-pointer text-white bg-black bg-opacity-50 rounded-xl p-6 hover:-translate-y-2 active:bg-blue-400 transition-all " >Start</button>
+            <button id="stop" onclick="stop()" class="text-2xl m-2 cursor-pointer text-white bg-black bg-opacity-50 rounded-xl p-6 hover:-translate-y-2 active:bg-red-400 transition-all" >Stop</button>
+            <button id="reset" onclick="reset()"  class="m-2 text-white bg-black bg-opacity-50 rounded-xl p-6 hover:-translate-y-2 cursor-pointer active:bg-lime-600 transition-all text-2xl" >Reset</button>
+        </buttons>
+
+    </main>
+    
+</body>
+</html>
+<script src="stopwatch.js"></script>
