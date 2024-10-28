@@ -12,7 +12,7 @@ let running = false;
 function start(){
     if(!running){
         startTime = Date.now()-elapsedTime;
-        timer = setInterval(update,10)
+        timer = setInterval(update,20)
         running = true;
     }
 
@@ -25,6 +25,8 @@ function stop(){
 function reset(){
     watch.textContent = "00:00:00:00"
     startTime = Date.now()
+    const current_time = Date.now()-Date.now()
+    update();
 }
 
 function update(){
