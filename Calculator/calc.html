@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel = "icon" type = "image/png" href = "https://png.pngtree.com/png-vector/20190115/ourmid/pngtree-vector-calculator-icon-png-image_319747.jpg">
+    <link rel = "apple-touch-icon" type = "image/png" href = "https://png.pngtree.com/png-vector/20190115/ourmid/pngtree-vector-calculator-icon-png-image_319747.jpg"/>
+    <link href="output.css" rel="stylesheet">
+
+</head>
+<body class=" h-screen w-screen bg-gradient-to-tl from-black to-white">
+    <mainbox class="mt-20 flex flex-col bg-black bg-opacity-90 rounded-xl items-center justify-center max-w-md mx-auto">
+        <displaybar id="displaybar" class="flex w-full h-20 bg-white bg-opacity-10 text-white text-end text-4xl p-4 rounded-lg items-center justify-end">0</displaybar>
+        <buttons class="grid grid-cols-4 gap-4 w-full p-2 mx-auto justify-items-center">
+            <button id="clear" onclick="clearscreen()" class="w-20 h-20 bg-white bg-opacity-40 text-white text-2xl font-thin p-2 rounded-full my-2 active:bg-green-500 transition-all delay-50 duration-100">C</button>
+            <button id="Del"  class="w-20 h-20 bg-white bg-opacity-40 text-white text-2xl font-thin p-2 rounded-full my-2 active:bg-green-500 transition-all delay-50 duration-100">Del</button>
+            <braks>
+            <button id="bracket_open" class="w-10 h-20 bg-white bg-opacity-40 text-white text-2xl font-thin p-2 rounded-tl-full rounded-bl-full my-2 active:bg-green-500 transition-all delay-50 duration-100">(</button>
+            <button id="bracket_closed" class="w-10 h-20 bg-white bg-opacity-40 text-white text-2xl font-thin p-2 rounded-tr-full rounded-br-full my-2 active:bg-green-500 transition-all delay-50 duration-100">)</button></braks>
+            <button id="/" class="w-20 h-20 bg-rose-700 text-white text-3xl font-thin p-2 rounded-full my-auto active:bg-green-500 transition-all delay-50 duration-100">/</button>
+            <button id="7" class="w-20 h-20 bg-white bg-opacity-10 text-white text-2xl font-thin p-2 rounded-full my-2 active:bg-green-500 transition-all delay-50 duration-100">7</button>
+            <button id="8" class="w-20 h-20 bg-white bg-opacity-10 text-white text-2xl font-thin p-2 rounded-full my-2 active:bg-green-500 transition-all delay-50 duration-100">8</button>
+            <button id="9" class="w-20 h-20 bg-white bg-opacity-10 text-white text-2xl font-thin p-2 rounded-full my-2 active:bg-green-500 transition-all delay-50 duration-100">9</button>
+            <button id="x" class="w-20 h-20 bg-rose-700 text-white text-3xl font-thin p-2 rounded-full my-auto active:bg-green-500 transition-all delay-50 duration-100">x</button>
+            <button id="6" class="w-20 h-20 bg-white bg-opacity-10 text-white text-2xl font-thin p-2 rounded-full my-2 active:bg-green-500 transition-all delay-50 duration-100">6</button>
+            <button id="5" class="w-20 h-20 bg-white bg-opacity-10 text-white text-2xl font-thin p-2 rounded-full my-2 active:bg-green-500 transition-all delay-50 duration-100">5</button>
+            <button id="4" class="w-20 h-20 bg-white bg-opacity-10 text-white text-2xl font-thin p-2 rounded-full my-2 active:bg-green-500 transition-all delay-50 duration-100">4</button>
+            <button id="+" class="w-20 h-20 bg-rose-700 text-white text-3xl font-thin p-2 rounded-full my-auto active:bg-green-500 transition-all delay-50 duration-100">+</button>
+            <button id="3" class="w-20 h-20 bg-white bg-opacity-10 text-white text-2xl font-thin p-2 rounded-full my-2 active:bg-green-500 transition-all delay-50 duration-100">3</button>
+            <button id="2" class="w-20 h-20 bg-white bg-opacity-10 text-white text-2xl font-thin p-2 rounded-full my-2 active:bg-green-500 transition-all delay-50 duration-100">2</button>
+            <button id="1" class="w-20 h-20 bg-white bg-opacity-10 text-white text-2xl font-thin p-2 rounded-full my-2 active:bg-green-500 transition-all delay-50 duration-100">1</button>
+            <button id="-" class="w-20 h-20 bg-rose-700 text-white text-3xl font-thin p-2 rounded-full my-auto active:bg-green-500 transition-all delay-50 duration-100">-</button>
+            <button id="0" class="w-44 h-20 bg-white bg-opacity-10 text-white text-2xl font-thin p-2 rounded-full my-2 active:bg-green-500 transition-all delay-50 duration-100 ml-28">0</button> <!-- Wider button -->
+            <button id="." class="w-20 h-20 bg-white bg-opacity-10 text-white text-2xl font-thin p-2 rounded-full my-2 active:bg-green-500 transition-all delay-50 duration-100 ml-56">.</button>
+            <button id="=" class="w-20 h-20 bg-rose-700 text-white text-3xl font-thin p-2 rounded-full my-auto active:bg-green-500 transition-all delay-50 duration-100 ml-56">=</button>
+        </buttons>
+    </mainbox>
+    <h1 class="text-center mt-20 text-4xl">C A L C U L A T O R</h1>
+
+    <script src="index.js"></script>
+</body>
+</html>
