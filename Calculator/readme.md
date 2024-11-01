@@ -12,15 +12,15 @@
 
 
 <h2 align="center">Features</h2>
-<p align="center">
+<p align="left">
   * JavaScript Content Manipulation<br>
-  * JavaScript Functions
-  * SetInterval function
+  * JavaScript Functions<br>
+  * SetInterval function<br>
   * Regex (to solve leading 0s being converted into other bases when using eval())
 </p>
 
 <h2 align="center">💻 Built with</h2>
-<p align="center">
+<p align="left">
   Technologies used in the project:
   <br>
   * JavaScript<br>
