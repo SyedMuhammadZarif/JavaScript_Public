@@ -5,7 +5,7 @@
 <h2 align="center">Project demo:</h2>
 <br>
 <p align="center">
-  <img src ="https://i.imgur.com/PFB5MKN.gif">
+  <img src ="https://i.imgur.com/akXvyyF.gif">
 </p>
 
 <h2 align="center">Features</h2>
