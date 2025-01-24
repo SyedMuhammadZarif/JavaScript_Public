@@ -11,7 +11,7 @@ const weatherContainer = document.getElementById('weatherContainer'); // Contain
 const cityElement = document.querySelector('city');                   // The element for the city data
 const tempHumidElement = document.querySelector('temp-humid');        // The element for temperature and humidity data
 const wthrDescriptionElement = document.querySelector('wthrdescription'); // The element for weather description
-
+const display_data = document.getElementById(`display_data`);
 // OpenWeatherMap API key (for weather data access)
 const apiKey = "b590181ba849752eab03ee84dd457280";
 
@@ -69,6 +69,7 @@ async function fetchWeatherData(city) {
 function updateWeatherDisplay(data) {
     // Destructure the necessary data from the API response
     const { name, main, weather } = data;
+    console.log(data)
 
     // Update the city name display
     cityName.textContent = name.charAt(0).toUpperCase() + name.slice(1);
@@ -80,7 +81,7 @@ function updateWeatherDisplay(data) {
     humidity.textContent = `💧${main.humidity}%`;
 
     // Update the description of the weather (e.g. clear sky, clouds)
-    description.textContent = weather[0].description.charAt(0).toUpperCase() + weather[0].description.slice(1);
+    description.textContent = weather[0].main.charAt(0).toUpperCase() + weather[0].main.slice(1);
 
     // Set the weather emoji based on the weather condition
     weatherEmoji.textContent = determineWeatherEmoji(weather[0].id);
@@ -88,11 +89,10 @@ function updateWeatherDisplay(data) {
     // Hide the error display and show the weather data container
     errorDisplay.classList.add('hidden');
     weatherContainer.classList.remove('hidden');
+    display_data.classList.remove(`hidden`);
     
     // Make specific elements visible (e.g. city, temperature/humidity, description)
-    cityElement.classList.remove('hidden');
-    tempHumidElement.classList.remove('hidden');
-    wthrDescriptionElement.classList.remove('hidden');
+   
 }
 
 // Function to determine which emoji to show based on the weather ID
@@ -125,9 +125,7 @@ function displayError(message) {
     errorDisplay.classList.remove('hidden');
 
     // Hide the weather data container elements
-    cityElement.classList.add('hidden');
-    tempHumidElement.classList.add('hidden');
-    wthrDescriptionElement.classList.add('hidden');
+    display_data.classList.add('hidden');
     
     // Show the weather container with the error message
     weatherContainer.classList.remove('hidden');

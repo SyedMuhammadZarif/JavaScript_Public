@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather</title>
     <link href="output.css" rel="stylesheet">
 
 </head>
@@ -14,23 +14,26 @@
     </div>    
     <form id="weatherform" class="flex flex-row justify-center items-center p-10">
         <input id="searchbox" type="text" placeholder="Enter City" class="mr-10 text-center w-fit p-4 bg-white bg-opacity-15 rounded-xl text-white placeholder:text-white placeholder:text-opacity-50">
-        <button id="submitbutton" onclick="search()" class="bg-red-600 p-4 rounded-xl text-white">Search</button>
+        <button id="submitbutton"  class="bg-red-600 p-4 rounded-xl text-white">Search</button>
     </form>
 
     
     <div id="weatherContainer" class="hidden flex flex-col justify-center items-center p-6 bg-white bg-opacity-20 w-fit mx-auto rounded-xl text-white transition-all fade-in">
-        <city class="hidden transition-all fade-in">
-            <h1 id="cityName" class="text-xl">City Name</h1>
-        </city>
-        <temp-humid class="hidden flex flex-row space-x-3 p-2 transition-all fade-in">
-            <p id="temp">🌡️23C</p>
-            <p id="humidity">💧75%</p>
-        </temp-humid>
-        <wthrdescription class="hidden flex flex-row space-x-2 p-2 transition-all slide-in">
-            <p id="description">Clear Skies</p>
-            <p id="weatherEmoji">☀️</p>
-        </wthrdescription>
-        <p id="errorDisplay" class="hidden text-red-500 transition-all fade-in">Please Enter a City!</p>
+        <display_data id="display_data" class="hidden flex flex-col justify-center items-center">
+
+                <h1 id="cityName" class="text-xl">City Name</h1>
+            
+            <temp-humid class="flex flex-row space-x-3 p-2 transition-all fade-in">
+                <p id="temp">🌡️23C</p>
+                <p id="humidity">💧75%</p>
+            </temp-humid>
+
+            <wthrdescription class="flex flex-row p-2 space-x-1 transition-all slide-in">
+                <p id="description">Clear Skies</p>
+                <p id="weatherEmoji">☀️</p>
+            </wthrdescription>
+        </display_data>
+        <p id="errorDisplay" class="hidden text-yellow-500">Please Enter a City!</p>
     </div>
     
 </body>
