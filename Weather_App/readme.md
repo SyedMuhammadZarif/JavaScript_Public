@@ -5,13 +5,13 @@
 <h2 align="center">Project demo:</h2>
 <br>
 <p align="center">
-  <img src ="https://i.imgur.com/akXvyyF.gif">
+  <img src="https://i.imgur.com/akXvyyF.gif" alt="Weather App Demo">
 </p>
 
 <h2 align="center">Features</h2>
 <p align="center">
   * JavaScript Content Manipulation<br>
-  * JavaScript Functions
+  * JavaScript Functions<br>
   * JSON Fetch and Format from API
 </p>
 
@@ -19,8 +19,7 @@
 <p align="center">
   Technologies used in the project:
   <br>
-  * JavaScript<br>
-  * HTML<br>
-  * Tailwind CSS
+  * <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript Logo" width="16" height="16"> JavaScript<br>
+  * <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML Logo" width="16" height="16"> HTML<br>
+  * <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind CSS Logo" width="16" height="16"> Tailwind CSS
 </p>
-
